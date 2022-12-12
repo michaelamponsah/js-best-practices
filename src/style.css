@@ -1,0 +1,169 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+figure {
+  margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+main {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+[contenteditable] {
+  outline: none;
+}
+
+.padding {
+  padding: 0 0.8em;
+}
+
+.bg-edit {
+  background-color: rgba(255, 195, 0, 0.2);
+}
+
+.todo-list-wrapper {
+  background-color: #fff;
+  width: 35%;
+  min-height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  position: relative;
+}
+
+.todo-list--header {
+  padding-top: 0.8em;
+}
+
+.input-wrapper {
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+}
+
+.todo-list--title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+}
+
+.divider {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
+.data-input-field,
+input[type="text"] {
+  width: 100%;
+  border: none;
+  font-style: italic;
+}
+
+.data-input-field:focus,
+input[type="text"]:focus {
+  outline: none;
+}
+
+i {
+  color: #b3b3b3;
+}
+
+.title {
+  color: #6b6969;
+}
+
+.todo-list--item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+}
+
+.input-desc-wrapper {
+  display: flex;
+  flex-grow: 1;
+}
+
+.description {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  min-width: calc(100% - 35px);
+  background-color: rgba(255, 195, 0, 0.01);
+  font-style: normal !important;
+}
+
+.description:read-only {
+  color: rgb(83, 133, 83);
+  text-decoration: line-through;
+  font-style: italic !important;
+}
+
+.description:focus {
+  background-color: rgba(255, 195, 0, 0.01);
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.elipsis:hover {
+  cursor: move;
+}
+
+.icon-delete {
+  color: rgba(255, 195, 0, 0.5);
+}
+
+.btn-delete {
+  border: none;
+}
+
+.active-item {
+  background-color: rgba(255, 195, 0, 0.2);
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  height: 50px;
+  background-color: #f6f6f6;
+  color: #bdbdbd;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
